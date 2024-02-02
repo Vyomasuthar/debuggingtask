@@ -8,4 +8,4 @@ def read_file(file_name):
         line = line.split()
         lines_list.append(line)
 
-    return lines_list
+
