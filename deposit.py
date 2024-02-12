@@ -20,7 +20,7 @@ def deposit(ls):
 
     file_name = ls[0] + '.txt'
     process_list = read_file.read_file(file_name)
-    id_file = open(file_name, 'a')
+    id_file = open(file_name, 'a')      #changed to open file mode 'a'
 
     if len(process_list) == 0:  # if there are no processes in the file
         last_id = 1
