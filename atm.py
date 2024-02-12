@@ -14,5 +14,4 @@ except FileNotFoundError:
 import menu1
 import os
 
-os.system('clear')
 menu1.menu1()  # start the program - call menu1() function
