@@ -5,10 +5,12 @@ import show_history
 import change_password
 
 
-def clear_screen():
+def clear_screen():         ####Changed to following code instead of    os.system('clear')
     # function to clear the output of the screen
-    os.system('clear')
-    print()  # print blank line after clearing the screen
+    if os.name == 'posix':  # Unix-like systems
+        os.system('clear')
+    elif os.name == 'nt':   # Windows
+        os.system('cls')  # print blank line after clearing the screen
 
 
 def menu2(account):
