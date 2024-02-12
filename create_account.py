@@ -5,14 +5,14 @@ def create_account(ls):
     # ls is a list of lists of lines in accounts file
     # ls is the accounts_list
 
-    os.system('clear')
+ 
     account_name = input('Enter Your Name (WITHOUT SPACES): ')
     account_password = input('Enter Your Password (WITHOUT SPACES): ')
 
     print("Creating Your Account .....")
     accounts_file = open('Accounts.txt', 'a')
 
-    if len(ls) == 0:
+    if len(ls) == 0:        #changed to '==' instead of !=
         new_last_id = 1
     else:
         new_last_id = int(ls[len(ls) - 1][0]) + 1
