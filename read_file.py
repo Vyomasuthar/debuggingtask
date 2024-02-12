@@ -7,5 +7,4 @@ def read_file(file_name):
     for line in opened_file:
         line = line.split()
         lines_list.append(line)
-
-
+    return lines_list ### Added REturn Statement
